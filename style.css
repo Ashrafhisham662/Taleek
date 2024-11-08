@@ -1,0 +1,175 @@
+:root{
+    --first-color-background: #b42045;
+    --secondary-color-text: #FFFFFF;
+    --primary-btn: #DAA520;
+    --border: 2px red solid;
+    --display: flex; 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+      font-family: "Roboto", sans-serif;
+
+
+}
+
+/*-----------------------------------
+|                                     |
+|                                     |
+-------------------------------------*/
+
+/*--------------------------------
+            container header
+----------------------------------*/
+
+.background-img{
+    background-image: url(https://taleek.com/img/bg-layer.svg);
+    background-color: var(--first-color-background) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 20px;
+    
+
+}
+
+.header-left h1{
+    color: var(--secondary-color-text);
+    padding-left: 20px;
+}
+
+/* .background-img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+} */
+
+/* section.background-img *{
+    z-index: 5;
+} */
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 200px;
+
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+
+.header-right ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+.header-right ul a{
+    text-decoration: none;
+    padding: 0 25px;
+    font-size: 18px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.5;
+    transition: 0.9s all;
+}
+
+.header-right ul a:hover{
+    opacity: 1;
+}
+
+
+.header-right .first-child{
+    opacity: 1;
+} 
+
+
+
+
+.title-main,
+.example{
+    text-align: center;
+    color: var(--secondary-color-text);
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 60px;
+    letter-spacing: 20px;
+}
+
+@keyframes image-mn{
+
+50%{
+    transform: translateX(50px);
+}
+    
+}
+
+.image-mn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: image-mn 9s infinite ;
+    transition: all 0.9s;
+}
+
+
+
+@keyframes example{
+    0% {letter-spacing: 0px; letter-spacing: 0px;}
+
+     25% {letter-spacing: 0px; letter-spacing: 20px;} 
+
+      50%  {letter-spacing: 0px; letter-spacing: 20px;}
+
+    100%  {letter-spacing: 0px; letter-spacing: 0px;} 
+}
+
+.example{
+    animation: example 10s infinite;
+    transition: all 0.9s;
+}
+
+
+
+.dwn-app{
+    padding: 0 200px;
+    position: relative;
+    top: -300px;
+    
+}
+
+.dwn-app a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    background: var(--primary-btn);
+    text-align: center;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 15px;
+    position: relative;
+}
+
+
+
+
+
+
